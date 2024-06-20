@@ -67,7 +67,10 @@ root.title("Advanced Digital Clock")  # Set window title
 bg_image = Image.open("background.jpg")
 bg_image = bg_image.resize((300, 400), Image.ANTIALIAS)  # Change the size of the background image
 bg_photo = ImageTk.PhotoImage(bg_image)  # Convert the image to a suitable format for tkinter
-
+# Settings to change the background
+def change_bg_color(color):
+    clock_label.config(background=color)  # Change the background color of the clock label
+    canvas.config(background=color)  # Change the background color of the canvas
 # Name of the programmer: Maryam Jamali
 # Email address: m.jamali16@yahoo.com
 # GitHub address: https://github.com/MaryaJamali
