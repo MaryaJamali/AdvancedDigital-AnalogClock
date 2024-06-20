@@ -10,6 +10,7 @@ def update_time():
     draw_clock()  # call analog clock drawing function
     clock_label.after(1000, update_time)  # update every 1000 milliseconds (1 second)
 
+
 def draw_clock():
     canvas.delete("all")  # Delete all elements from the canvas
     canvas.create_image(0, 0, anchor=tk.NW, image=bg_photo)  # Set the background image
@@ -67,10 +68,38 @@ root.title("Advanced Digital Clock")  # Set window title
 bg_image = Image.open("background.jpg")
 bg_image = bg_image.resize((300, 400), Image.ANTIALIAS)  # Change the size of the background image
 bg_photo = ImageTk.PhotoImage(bg_image)  # Convert the image to a suitable format for tkinter
+
+
 # Settings to change the background
 def change_bg_color(color):
     clock_label.config(background=color)  # Change the background color of the clock label
     canvas.config(background=color)  # Change the background color of the canvas
+
+
+# Create a canvas to draw an analog clock
+canvas = tk.Canvas(root, width=300, height=400)
+canvas.pack()  # Add a canvas to the window
+
+# Create a label to display the digital clock
+clock_label = tk.Label(root, font=('calibri', 15, 'bold'), background='white', foreground='white')
+clock_label.pack(anchor='center')  # Add a label to the window
+
+# Create a menu to change the background color
+menu = tk.Menu(root)
+root.config(menu=menu)
+
+bg_menu = tk.Menu(menu)
+menu.add_cascade(label="Change Background", menu=bg_menu)
+bg_menu.add_command(label="Black", command=lambda: change_bg_color('black'))
+bg_menu.add_command(label="Light Blue", command=lambda: change_bg_color('lightblue'))
+bg_menu.add_command(label="Light Green", command=lambda: change_bg_color('lightgreen'))
+
+
+# Create a menu to change the background color
+update_time()
+# Create a menu to change the background color
+root.mainloop()
+
 # Name of the programmer: Maryam Jamali
 # Email address: m.jamali16@yahoo.com
 # GitHub address: https://github.com/MaryaJamali
