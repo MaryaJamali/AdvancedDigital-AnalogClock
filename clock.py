@@ -59,6 +59,15 @@ def draw_clock():
                        center_y + hour_hand_length * math.sin(hour_angle), fill="white", width=3)
 
 
+# Create the main window
+root = tk.Tk()
+root.title("Advanced Digital Clock")  # Set window title
+
+# Load background image
+bg_image = Image.open("background.jpg")
+bg_image = bg_image.resize((300, 400), Image.ANTIALIAS)  # Change the size of the background image
+bg_photo = ImageTk.PhotoImage(bg_image)  # Convert the image to a suitable format for tkinter
+
 # Name of the programmer: Maryam Jamali
 # Email address: m.jamali16@yahoo.com
 # GitHub address: https://github.com/MaryaJamali
