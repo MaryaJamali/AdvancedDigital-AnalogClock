@@ -1,0 +1,4 @@
+pillow==10.2.0
+tkinter ----->  tkinter should be installed with Python by default
+time -----> time and math are installed by default with Python
+math -----> time and math are installed by default with Python
