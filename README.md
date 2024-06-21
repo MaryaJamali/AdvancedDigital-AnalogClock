@@ -16,5 +16,5 @@ This project is a Tkinter based application that displays digital and analog clo
 ```draw_clock```Draws an analog clock with the current time.<br>
 ```change_bg_color```Changes the background color of the clock interface.<br>
 ```Main program```Creates the Tkinter window, sets the canvas, labels, and menus, and starts the main loop.<br>
-## Author:
+## Author
 Maryam Jamali 💞
