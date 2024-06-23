@@ -7,7 +7,7 @@ This project is a Tkinter based application that displays digital and analog clo
  ⭐ Background Image : Displays a background image on the canvas.<br>
 ## Installation
 1. Simulate your repository : ``` git clone https://github.com/MaryaJamali/AdvancedDigital-AnalogClock.git```
-2. Move to the project directory : ```cd advanced-digital-analog-clock```
+2. Move to the project directory : ```cd AdvancedDigital-AnalogClock```
 3. Install required libraries : ```pip install tkinter pillow```
 4. Add background image : 👉 Place a background image named background.jpg in the project directory. The image will be resized to fit the canvas.
 5. Run the program
